@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wlins.me/"/>
-  <updated>2017-03-12T14:10:35.659Z</updated>
+  <updated>2017-03-13T01:55:57.741Z</updated>
   <id>http://wlins.me/</id>
   
   <author>
@@ -16,11 +16,80 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo-Github-Blog</title>
+    <link href="http://wlins.me/2017/03/13/blog/"/>
+    <id>http://wlins.me/2017/03/13/blog/</id>
+    <published>2017-03-13T01:55:57.777Z</published>
+    <updated>2017-03-13T01:55:57.741Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/img/blog.jpeg" alt="Alt_text" title="Optional title"></p>
+<p>本次博客是借助<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> + <a href="https://github.com" target="_blank" rel="external">Github</a>搭建，需要用到Nodejs和npm，主机系统是Ubuntu 16.04 LTS。</p>
+<h3 id="preparation"><a href="#preparation" class="headerlink" title="preparation"></a>preparation</h3><h4 id="Nodejs-amp-npm"><a href="#Nodejs-amp-npm" class="headerlink" title="Nodejs &amp; npm"></a>Nodejs &amp; npm</h4><p> 安装Nodejs &amp; npm，用于生成静态页面和安装插件，Nodejs必须是6.x版本</p>
+<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p>首先安装git工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install git</div></pre></td></tr></table></figure></p>
+<p>部署时需要通过git工具将本地文件提交到远程github仓库</p>
+<p>然后到<a href="https://github.com" target="_blank" rel="external">Github</a>官网注册github帐号，在github官网创建仓库，仓库名必须为”your_id”.github.io,(将引号内容替换为你的github名）</p>
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p>在本地创建一个文件夹，进入本文件夹，安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g Hexo</div></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="procedure"><a href="#procedure" class="headerlink" title="procedure"></a>procedure</h3><p><strong>blog工程初始化安装</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>操作完成后，文件夹下会生成配置文件<br><strong>生成静态界面</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure></p>
+<p>操作完成后，会根据前阶段的文件生成静态页面文件<br><strong>与github关联</strong><br>修改文件夹下的_config.yml文件，在文件尾，修改对应配置<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	<span class="built_in">type</span>: git</div><div class="line">	repo: https://github.com/your_github_id/your_github_id.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure></p>
+<p>注意，每个冒号后面有一个空格，语法要求，否则报错<br><strong>部署</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
+<p>需要输入github的账号和密码<br>在浏览器输入地址 <a href="https://github.com/your_github_id/your_github_id.io" target="_blank" rel="external">https://github.com/your_github_id/your_github_id.io</a><br>即可访问hex Hello World页面，至此，个人博客搭建成功。</p>
+<hr>
+<h3 id="inclusion"><a href="#inclusion" class="headerlink" title="inclusion"></a>inclusion</h3><p><strong><em>增加文章</em></strong><br>blog文章用markdown语法写，保存为md文件，放在<strong>/source/_posts</strong>路径下即可,然后部署即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>每次部署使用这三条命令</p>
+<p><strong><em>修改主题</em></strong><br>hexo 的主题放在<strong>/theme</strong>路径下，在网上找到对应的hexo主题包，放在这个路径下，然后修改_config.yml文件。在__config.yml文件中，有一个theme的配置项，改为你自己的主题名即可<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: your_theme_name</div></pre></td></tr></table></figure></p>
+<p><strong><em>本地调试</em></strong><br>在执行完hexo generate命令后，可以进行本地调试，预览blog效果<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo g</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>然后在浏览器地址栏输入localhost:4000,即可预览</p>
+<p><strong><em>Nodejs安装6.x版本问题</em></strong><br>我在安装Nodejs的过程中，遇到一个问题，我安装的是6.x版本，但实际上装得是4.x版本，通过node -v查看版本，发现版本不对，花了很久才找到解决方法<br>安装Nodejs方法网上很多教程，但是我发现我按装时选择的是最新版本，可实际安装的却是4.2.6版本，解决方法如下：</p>
+<ul>
+<li><p><strong>新建一个文件:</strong>/etc/apt/spurces.list.d/nodesource.list(需要权限),文件中写入下面两行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">deb https://deb.nodesource.com/node_6.x xenial main</div><div class="line">deb-src https://deb.nodesource.com/node_6.x xenial main</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>下载GPG Signing Key</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl <span class="_">-s</span> https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>update</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>检查apt-cache</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-cache policy nodejs</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>结果应该显示node的新版本，如果没有，则出错，检查前面的步骤</p>
+<ul>
+<li><strong>安装nodejs</strong><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install nodejs</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>查看nodejs 版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node -v</div></pre></td></tr></table></figure></p>
+<p>我经过上面的步骤后成功安装nodejs 6.0版本。</p>
+<h3 id="end"><a href="#end" class="headerlink" title="end"></a>end</h3><p>至此，一个简单的个人博客应该搭建完成，有什么问题可以联系我<a href="http://wlins.me">Blog</a> or <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">Github</a>.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/img/blog.jpeg&quot; alt=&quot;Alt_text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本次博客是借助&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;ext
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="hexo" scheme="http://wlins.me/tags/hexo/"/>
+    
+      <category term="github" scheme="http://wlins.me/tags/github/"/>
+    
+      <category term="linux" scheme="http://wlins.me/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://wlins.me/2017/03/12/start/"/>
-    <id>http://wlins.me/2017/03/12/start/</id>
-    <published>2017-03-12T14:10:35.687Z</published>
-    <updated>2017-03-12T14:10:35.659Z</updated>
+    <link href="http://wlins.me/2017/03/13/start/"/>
+    <id>http://wlins.me/2017/03/13/start/</id>
+    <published>2017-03-12T16:26:56.566Z</published>
+    <updated>2017-03-12T16:26:56.514Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/boat_ocean.jpg" alt="Alt text" title="Optional title"></p>
 <p>Welcom to strawberylin’s home. This is my very first post. If you find any problems or trouble  you can find me on <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">GitHub</a>.</p>

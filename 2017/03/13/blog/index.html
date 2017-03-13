@@ -21,7 +21,7 @@ preparationNodejs &amp;amp; npm 安装Nodejs &amp;amp; npm，用于生成静态�
 Github首先安装git工具1sudo apt-get install git
 部署时需要通过git工具将本地文件提交到远">
 <meta property="og:image" content="http://wlins.me/assets/img/blog.jpeg">
-<meta property="og:updated_time" content="2017-03-13T01:55:57.741Z">
+<meta property="og:updated_time" content="2017-03-13T11:02:03.735Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Github-Blog">
 <meta name="twitter:description" content="本次博客是借助Hexo + Github搭建，需要用到Nodejs和npm，主机系统是Ubuntu 16.04 LTS。
@@ -79,10 +79,6 @@ Github首先安装git工具1sudo apt-get install git
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -185,7 +181,7 @@ Github首先安装git工具1sudo apt-get install git
 
         
         <a href="/2017/03/13/blog/" class="archive-article-date">
-  	<time datetime="2017-03-13T01:55:57.777Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
+  	<time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
 </a>
         
       </header>
@@ -200,6 +196,7 @@ Github首先安装git工具1sudo apt-get install git
 <p>然后到<a href="https://github.com" target="_blank" rel="external">Github</a>官网注册github帐号，在github官网创建仓库，仓库名必须为”your_id”.github.io,(将引号内容替换为你的github名）</p>
 <h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p>在本地创建一个文件夹，进入本文件夹，安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g Hexo</div></pre></td></tr></table></figure></p>
 <hr>
+<a id="more"></a>
 <h3 id="procedure"><a href="#procedure" class="headerlink" title="procedure"></a>procedure</h3><p><strong>blog工程初始化安装</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
 <p>操作完成后，文件夹下会生成配置文件<br><strong>生成静态界面</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure></p>
 <p>操作完成后，会根据前阶段的文件生成静态页面文件<br><strong>与github关联</strong><br>修改文件夹下的_config.yml文件，在文件尾，修改对应配置<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">	<span class="built_in">type</span>: git</div><div class="line">	repo: https://github.com/your_github_id/your_github_id.github.io.git</div><div class="line">	branch: master</div></pre></td></tr></table></figure></p>
@@ -213,7 +210,7 @@ Github首先安装git工具1sudo apt-get install git
 <p>然后在浏览器地址栏输入localhost:4000,即可预览</p>
 <p><strong><em>Nodejs安装6.x版本问题</em></strong><br>我在安装Nodejs的过程中，遇到一个问题，我安装的是6.x版本，但实际上装得是4.x版本，通过node -v查看版本，发现版本不对，花了很久才找到解决方法<br>安装Nodejs方法网上很多教程，但是我发现我按装时选择的是最新版本，可实际安装的却是4.2.6版本，解决方法如下：</p>
 <ul>
-<li><p><strong>新建一个文件:</strong>/etc/apt/spurces.list.d/nodesource.list(需要权限),文件中写入下面两行：</p>
+<li><p><strong>新建一个文件:</strong>/etc/apt/sources.list.d/nodesource.list(需要权限),文件中写入下面两行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">deb https://deb.nodesource.com/node_6.x xenial main</div><div class="line">deb-src https://deb.nodesource.com/node_6.x xenial main</div></pre></td></tr></table></figure>
 </li>
 <li><p><strong>下载GPG Signing Key</strong></p>
@@ -360,11 +357,15 @@ Github首先安装git工具1sudo apt-get install git
   
 <nav id="article-nav">
   
-  
-    <a href="/2017/03/13/start/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2222/12/31/start/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -427,25 +428,17 @@ Github首先安装git工具1sudo apt-get install git
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -524,38 +517,6 @@ Github首先安装git工具1sudo apt-get install git
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://www.baidu.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>百度</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://google.com/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>google</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     

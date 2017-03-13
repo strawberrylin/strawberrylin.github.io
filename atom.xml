@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wlins.me/"/>
-  <updated>2017-03-13T11:03:13.588Z</updated>
+  <updated>2017-03-13T11:08:08.185Z</updated>
   <id>http://wlins.me/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://wlins.me/2222/12/31/start/"/>
-    <id>http://wlins.me/2222/12/31/start/</id>
-    <published>2222-12-30T16:00:00.000Z</published>
-    <updated>2017-03-13T11:03:13.588Z</updated>
+    <link href="http://wlins.me/2017/12/31/start/"/>
+    <id>http://wlins.me/2017/12/31/start/</id>
+    <published>2017-12-30T16:00:00.000Z</published>
+    <updated>2017-03-13T11:08:08.185Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/boat_ocean.jpg" alt="Alt text" title="Optional title"></p>
 <p>Welcom to strawberylin’s home. This is my very first post. If you find any problems or trouble  you can find me on <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">GitHub</a>.</p>

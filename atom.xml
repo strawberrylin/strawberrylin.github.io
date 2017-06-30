@@ -43,6 +43,116 @@
   </entry>
   
   <entry>
+    <title>Machine-Learning-BaseConception</title>
+    <link href="http://wlins.me/2017/06/30/concept_day1/"/>
+    <id>http://wlins.me/2017/06/30/concept_day1/</id>
+    <published>2017-06-29T16:00:00.000Z</published>
+    <updated>2017-06-30T08:13:24.569Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/img/images1.jpeg" alt="Alt_text" title="Optional title"></p>
+<p>本文主要介绍一些浅显的机器学习的基本概念</p>
+<hr>
+<ul>
+<li><strong>概念学习</strong></li>
+</ul>
+<blockquote>
+<p>从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数</p>
+</blockquote>
+<ul>
+<li><strong>实例与集合</strong></li>
+</ul>
+<blockquote>
+<p>实例是一个样例，所有的实例构成一个集合</p>
+</blockquote>
+<ul>
+<li><strong>目标概念</strong></li>
+</ul>
+<blockquote>
+<p>待学习的函数或者目标概念</p>
+</blockquote>
+<a id="more"></a>
+<ul>
+<li><strong>训练集</strong></li>
+</ul>
+<blockquote>
+<p>训练样例，用来进行训练，也就是产生模型或者算法的数据集</p>
+</blockquote>
+<ul>
+<li><strong>测试集</strong></li>
+</ul>
+<blockquote>
+<p>测试样例，用来专门进行测试已经学习好的模型或者算法的数据集</p>
+</blockquote>
+<ul>
+<li><strong>特征向量</strong></li>
+</ul>
+<blockquote>
+<p>属性的集合，通常用一个向量来表示，附属于一个实例</p>
+</blockquote>
+<ul>
+<li><strong>标记</strong></li>
+</ul>
+<blockquote>
+<p>实例类别的标记，学习的答案，结果的可能值的集合</p>
+</blockquote>
+<ul>
+<li><strong>分类与回归</strong></li>
+</ul>
+<blockquote>
+<p>分类: 目标标记为类别型数据<br>回归: 目标标记为连续型数据</p>
+</blockquote>
+<ul>
+<li><strong>监督学习</strong></li>
+</ul>
+<blockquote>
+<p>有监督学习: 训练集有类别标记<br>无监督学习: 训练集无类别标记<br>半监督学习: 有类别标记的训练集+无标记的训练集</p>
+</blockquote>
+<ul>
+<li><p>机器学习步骤与框架</p>
+<ul>
+<li>把数据拆分为训练集和测试集</li>
+<li>用训练集和训练集的特征向量來训练算法</li>
+<li>把学习來的算法运用在测试集上评估算法</li>
+</ul>
+</li>
+</ul>
+<h3 id="end"><a href="#end" class="headerlink" title="end"></a>end</h3><p>有关机器学习的一些基本概念介绍完毕，有什么问题可以联系我<a href="http://wlins.me">Blog</a> or <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">Github</a>.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/img/images1.jpeg&quot; alt=&quot;Alt_text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
+&lt;p&gt;本文主要介绍一些浅显的机器学习的基本概念&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;概念学习&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;实例与集合&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实例是一个样例，所有的实例构成一个集合&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标概念&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;待学习的函数或者目标概念&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="ml - conception" scheme="http://wlins.me/tags/ml-conception/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo-Github-Blog</title>
     <link href="http://wlins.me/2017/03/13/blog/"/>
     <id>http://wlins.me/2017/03/13/blog/</id>

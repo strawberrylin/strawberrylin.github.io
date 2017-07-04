@@ -6,74 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wlins.me">
-  <title>Machine-Learning-BaseConception | Strawberrylin&#39;s Home</title>
+  <title>Machine-Learning-KNN | Strawberrylin&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文主要介绍一些浅显的机器学习的基本概念
-
-
-概念学习
-
-
-从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数
-
-
-实例与集合
-
-
-实例是一个样例，所有的实例构成一个集合
-
-
-目标概念
-
-
-待学习的函数或者目标概念">
+  <meta name="description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
+为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Machine-Learning-BaseConception">
-<meta property="og:url" content="http://wlins.me/2017/06/30/concept_day1/index.html">
+<meta property="og:title" content="Machine-Learning-KNN">
+<meta property="og:url" content="http://wlins.me/2017/07/04/knn/index.html">
 <meta property="og:site_name" content="Strawberrylin's Home">
-<meta property="og:description" content="本文主要介绍一些浅显的机器学习的基本概念
-
-
-概念学习
-
-
-从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数
-
-
-实例与集合
-
-
-实例是一个样例，所有的实例构成一个集合
-
-
-目标概念
-
-
-待学习的函数或者目标概念">
-<meta property="og:image" content="http://wlins.me/assets/img/images1.jpeg">
-<meta property="og:updated_time" content="2017-06-30T08:13:24.569Z">
+<meta property="og:description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
+为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
+<meta property="og:image" content="http://wlins.me/assets/img/images3.jpeg">
+<meta property="og:updated_time" content="2017-07-04T09:37:24.331Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Machine-Learning-BaseConception">
-<meta name="twitter:description" content="本文主要介绍一些浅显的机器学习的基本概念
-
-
-概念学习
-
-
-从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数
-
-
-实例与集合
-
-
-实例是一个样例，所有的实例构成一个集合
-
-
-目标概念
-
-
-待学习的函数或者目标概念">
-<meta name="twitter:image" content="http://wlins.me/assets/img/images1.jpeg">
+<meta name="twitter:title" content="Machine-Learning-KNN">
+<meta name="twitter:description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
+为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
+<meta name="twitter:image" content="http://wlins.me/assets/img/images3.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Strawberrylin&#39;s Home" type="application/atom+xml">
   
@@ -205,94 +154,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-concept_day1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-knn" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Machine-Learning-BaseConception
+      Machine-Learning-KNN
     </h1>
   
 
         
-        <a href="/2017/06/30/concept_day1/" class="archive-article-date">
-  	<time datetime="2017-06-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-30</time>
+        <a href="/2017/07/04/knn/" class="archive-article-date">
+  	<time datetime="2017-07-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/assets/img/images1.jpeg" alt="Alt_text" title="Optional title"></p>
-<p>本文主要介绍一些浅显的机器学习的基本概念</p>
-<hr>
-<ul>
-<li><strong>概念学习</strong></li>
-</ul>
-<blockquote>
-<p>从某个有关布尔函数的输入和输出训练样例中该推断出该布尔函数</p>
-</blockquote>
-<ul>
-<li><strong>实例与集合</strong></li>
-</ul>
-<blockquote>
-<p>实例是一个样例，所有的实例构成一个集合</p>
-</blockquote>
-<ul>
-<li><strong>目标概念</strong></li>
-</ul>
-<blockquote>
-<p>待学习的函数或者目标概念</p>
-</blockquote>
+        <p><img src="/assets/img/images3.jpeg" alt="Alt_text" title="Optional title"></p>
+<h4 id="KNN算法"><a href="#KNN算法" class="headerlink" title="KNN算法"></a>KNN算法</h4><p>KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类</p>
+<p>为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类</p>
 <a id="more"></a>
-<ul>
-<li><strong>训练集</strong></li>
-</ul>
 <blockquote>
-<p>训练样例，用来进行训练，也就是产生模型或者算法的数据集</p>
+<p>  选择一个参数K，K是选择已知实例的数目，使预测具有最高的精确度<br>  计算未知实例和所有已知实例的距离<br>  选择最近K个已知实例<br>  选取最邻样本中最多数的类别作为这个实例的类别</p>
 </blockquote>
-<ul>
-<li><strong>测试集</strong></li>
-</ul>
-<blockquote>
-<p>测试样例，用来专门进行测试已经学习好的模型或者算法的数据集</p>
-</blockquote>
-<ul>
-<li><strong>特征向量</strong></li>
-</ul>
-<blockquote>
-<p>属性的集合，通常用一个向量来表示，附属于一个实例</p>
-</blockquote>
-<ul>
-<li><strong>标记</strong></li>
-</ul>
-<blockquote>
-<p>实例类别的标记，学习的答案，结果的可能值的集合</p>
-</blockquote>
-<ul>
-<li><strong>分类与回归</strong></li>
-</ul>
-<blockquote>
-<p>分类: 目标标记为类别型数据<br>回归: 目标标记为连续型数据</p>
-</blockquote>
-<ul>
-<li><strong>监督学习</strong></li>
-</ul>
-<blockquote>
-<p>有监督学习: 训练集有类别标记<br>无监督学习: 训练集无类别标记<br>半监督学习: 有类别标记的训练集+无标记的训练集</p>
-</blockquote>
-<ul>
-<li><p>机器学习步骤与框架</p>
-<ul>
-<li>把数据拆分为训练集和测试集</li>
-<li>用训练集和训练集的特征向量來训练算法</li>
-<li>把学习來的算法运用在测试集上评估算法</li>
-</ul>
-</li>
-</ul>
-<h3 id="end"><a href="#end" class="headerlink" title="end"></a>end</h3><p>有关机器学习的一些基本概念介绍完毕，有什么问题可以联系我<a href="http://wlins.me">Blog</a> or <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">Github</a>.</p>
+<h4 id="KNN算法应用"><a href="#KNN算法应用" class="headerlink" title="KNN算法应用"></a>KNN算法应用</h4><p>在python库中有iris的数据集，可以直接加载，并且使用<br>数据集分为两部分，第一部分是每一个实例的特征值，有4项，第二部分是实例的标记</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> neighbors</div><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</div><div class="line"></div><div class="line">knn = neighbors.KNeighborsClassifier()</div><div class="line"></div><div class="line">iris = datasets.load_iris()</div><div class="line"><span class="keyword">print</span> iris</div><div class="line"></div><div class="line">knn.fit(iris.data, iris.target)</div><div class="line"></div><div class="line">predictedLabel = knn.predict([[<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>, <span class="number">0.4</span>]])</div><div class="line"></div><div class="line"><span class="keyword">print</span> (<span class="string">"predictedLabel is :"</span> + predictedLabel)</div><div class="line"><span class="keyword">print</span> predictedLabel</div></pre></td></tr></table></figure>
+<p>对于未知实例[0.1,0.2,0.3,0.4]，预测的结果为属于[0]</p>
 
       
 
@@ -341,7 +232,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ml - conception</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ml - knn</a>
         		</li>
       		
 		</ul>
@@ -397,7 +288,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://wlins.me/2017/06/30/concept_day1/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wlins.me/2017/07/04/knn/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -411,18 +302,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/07/03/decisiontree/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/12/31/start/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Machine-Learning-DecisionTree
+          Hello World
         
       </div>
     </a>
   
   
-    <a href="/2017/03/13/blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo-Github-Blog</div>
+    <a href="/2017/07/03/decisiontree/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Machine-Learning-DecisionTree</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -436,7 +327,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="concept_day1" data-title="Machine-Learning-BaseConception" data-url="http://wlins.me/2017/06/30/concept_day1/"></div>
+	<div class="ds-thread" data-thread-key="knn" data-title="Machine-Learning-KNN" data-url="http://wlins.me/2017/07/04/knn/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

@@ -43,11 +43,45 @@
   </entry>
   
   <entry>
+    <title>Machine-Learning-KNN</title>
+    <link href="http://wlins.me/2017/07/04/knn/"/>
+    <id>http://wlins.me/2017/07/04/knn/</id>
+    <published>2017-07-03T16:00:00.000Z</published>
+    <updated>2017-07-04T09:37:24.331Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/img/images3.jpeg" alt="Alt_text" title="Optional title"></p>
+<h4 id="KNN算法"><a href="#KNN算法" class="headerlink" title="KNN算法"></a>KNN算法</h4><p>KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类</p>
+<p>为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类</p>
+<a id="more"></a>
+<blockquote>
+<p>  选择一个参数K，K是选择已知实例的数目，使预测具有最高的精确度<br>  计算未知实例和所有已知实例的距离<br>  选择最近K个已知实例<br>  选取最邻样本中最多数的类别作为这个实例的类别</p>
+</blockquote>
+<h4 id="KNN算法应用"><a href="#KNN算法应用" class="headerlink" title="KNN算法应用"></a>KNN算法应用</h4><p>在python库中有iris的数据集，可以直接加载，并且使用<br>数据集分为两部分，第一部分是每一个实例的特征值，有4项，第二部分是实例的标记</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> neighbors</div><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</div><div class="line"></div><div class="line">knn = neighbors.KNeighborsClassifier()</div><div class="line"></div><div class="line">iris = datasets.load_iris()</div><div class="line"><span class="keyword">print</span> iris</div><div class="line"></div><div class="line">knn.fit(iris.data, iris.target)</div><div class="line"></div><div class="line">predictedLabel = knn.predict([[<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>, <span class="number">0.4</span>]])</div><div class="line"></div><div class="line"><span class="keyword">print</span> (<span class="string">"predictedLabel is :"</span> + predictedLabel)</div><div class="line"><span class="keyword">print</span> predictedLabel</div></pre></td></tr></table></figure>
+<p>对于未知实例[0.1,0.2,0.3,0.4]，预测的结果为属于[0]</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/img/images3.jpeg&quot; alt=&quot;Alt_text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;KNN算法&quot;&gt;&lt;a href=&quot;#KNN算法&quot; class=&quot;headerlink&quot; title=&quot;KNN算法&quot;&gt;&lt;/a&gt;KNN算法&lt;/h4&gt;&lt;p&gt;KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类&lt;/p&gt;
+&lt;p&gt;为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="ml - knn" scheme="http://wlins.me/tags/ml-knn/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Machine-Learning-DecisionTree</title>
     <link href="http://wlins.me/2017/07/03/decisiontree/"/>
     <id>http://wlins.me/2017/07/03/decisiontree/</id>
     <published>2017-07-02T16:00:00.000Z</published>
-    <updated>2017-07-03T02:41:16.394Z</updated>
+    <updated>2017-07-04T09:37:25.395Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/images2.jpeg" alt="Alt_text" title="Optional title"></p>
 <h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><p>决策树算法属于监督学习，决策树是一个类似一流程图的树型结构，每个内部结点表示在一个属性上的测试，每个分支代表一个属性输出，每个树叶结点代表类或者类分布，树的最顶层是根结点。</p>

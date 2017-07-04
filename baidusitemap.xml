@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://wlins.me/2017/07/03/decisiontree/</loc>
-    <lastmod>2017-07-03T02:41:16.394Z</lastmod>
+    <lastmod>2017-07-04T09:37:25.395Z</lastmod>
     <data>
         <display>
         <title>Machine-Learning-DecisionTree</title>
@@ -14,6 +14,25 @@
         <tag>随笔</tag>
          
         <tag>ml - decisiontree</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wlins.me/2017/07/04/knn/</loc>
+    <lastmod>2017-07-04T09:37:24.331Z</lastmod>
+    <data>
+        <display>
+        <title>Machine-Learning-KNN</title>
+        <pubTime>2017-07-03T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>ml - knn</tag>
          
          
            

@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wlins.me">
-  <title>Tag: hexo | Strawberrylin&#39;s Home</title>
+  <title>Machine-Learning-Caffe | Strawberrylin&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Strawberrylin's Home">
-<meta property="og:url" content="http://wlins.me/tags/hexo/index.html">
+  <meta name="description" content="Caffe是一个深度学习的框架，主要用于神经网络深度学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine-Learning-Caffe">
+<meta property="og:url" content="http://wlins.me/2017/07/05/caffe-learn/index.html">
 <meta property="og:site_name" content="Strawberrylin's Home">
-<meta property="og:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
+<meta property="og:description" content="Caffe是一个深度学习的框架，主要用于神经网络深度学习">
+<meta property="og:image" content="http://wlins.me/assets/img/images4.jpeg">
+<meta property="og:updated_time" content="2017-07-06T03:47:04.930Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Strawberrylin's Home">
-<meta name="twitter:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
+<meta name="twitter:title" content="Machine-Learning-Caffe">
+<meta name="twitter:description" content="Caffe是一个深度学习的框架，主要用于神经网络深度学习">
+<meta name="twitter:image" content="http://wlins.me/assets/img/images4.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Strawberrylin&#39;s Home" type="application/atom+xml">
   
@@ -148,36 +151,105 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-caffe-learn" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/31/start/" class="archive-article-date">
-  	<time datetime="2017-12-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/31/start/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      Machine-Learning-Caffe
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/05/caffe-learn/" class="archive-article-date">
+  	<time datetime="2017-07-04T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/img/images4.jpeg" alt="Alt_text" title="Optional title"></p>
+<p>Caffe是一个深度学习的框架，主要用于神经网络深度学习</p>
+<a id="more"></a>
+<h4 id="Caffe模型"><a href="#Caffe模型" class="headerlink" title="Caffe模型"></a>Caffe模型</h4><ul>
+<li><p>Layers</p>
+<p>  Layer是Caffe模型和计算的基本单元，一系列layer和其他连接的集合组成了Net<br>  每一个Layer都定义了三种运算</p>
+<ul>
+<li>setup 在模型初始化时重置layer及其相互的连接</li>
+<li>forword 从Bottom层中接收Blob数据，进行计算后输出送入到top层中</li>
+<li>backword 给定相对于top层输出的梯度，计算其相对于输入的梯度，并传递到Bottom层</li>
+</ul>
+</li>
+<li><p>Blobs</p>
+<p>  Caffe使用Blobs结构來存储,交换,处理网络中的数据和导数信息，Blob是标准的数组结构</p>
+</li>
+<li><p>Nets</p>
+<p>  Caffe基于自己的模型，通过逐层定义Layer的方式定义整个网络，网络从数据输入层到损失层自下向上的定义整个模型</p>
+<ul>
+<li><strong>Net::Init() </strong> 进行模型的初始化，创建<strong>Blobs</strong>和<strong>Layers</strong>，搭建整个无向图，调用layer的<strong>Setup</strong>函数</li>
+</ul>
+</li>
+</ul>
+<h4 id="前传与后传"><a href="#前传与后传" class="headerlink" title="前传与后传"></a>前传与后传</h4><ul>
+<li><p>前传</p>
+<p>  Caffe组合每一层的计算以得到整个模型的计算函数</p>
+<ul>
+<li><strong>Layer::Forward()</strong> 实现每一层的前传</li>
+<li><strong>Net::Forward()</strong> 实现网络的前传</li>
+</ul>
+</li>
+<li><p>后传</p>
+<p>  Caffe反向组合每一层的梯度來计算整个网络的梯度</p>
+<ul>
+<li><strong>Layer::Backward()</strong> 实现每一层的后传</li>
+<li><strong>Net::Backward()</strong> 实现网络的后传</li>
+</ul>
+</li>
+</ul>
+<h4 id="Loss"><a href="#Loss" class="headerlink" title="Loss"></a>Loss</h4><p>学习的目的是找到一个网络权重的集合，使得损失函数最小<br>损失通过网络的前向计算得到，某些层的输出可以作为损失函数</p>
+<h4 id="Solver"><a href="#Solver" class="headerlink" title="Solver"></a>Solver</h4><p>Solver通过协调Net的前向推断计算和反向梯度计算来对参数进行更新,从而达到减小loss的目的</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖糖<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechatpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,75 +259,121 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ml-caffe</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wlins.me/2017/07/05/caffe-learn/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/13/blog/" class="archive-article-date">
-  	<time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/13/blog/">Hexo-Github-Blog</a>
-    </h1>
+    <a href="/2017/12/31/start/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/04/knn/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Machine-Learning-KNN</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="caffe-learn" data-title="Machine-Learning-Caffe" data-url="http://wlins.me/2017/07/05/caffe-learn/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"strawberrylin"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -278,9 +396,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

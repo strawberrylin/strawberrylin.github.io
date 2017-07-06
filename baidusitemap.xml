@@ -4,8 +4,50 @@
 
     
   <url>
+    <loc>http://wlins.me/2017/03/13/blog/</loc>
+    <lastmod>2017-07-06T03:47:06.010Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo-Github-Blog</title>
+        <pubTime>2017-03-12T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wlins.me/2017/07/05/caffe-learn/</loc>
+    <lastmod>2017-07-06T03:47:04.930Z</lastmod>
+    <data>
+        <display>
+        <title>Machine-Learning-Caffe</title>
+        <pubTime>2017-07-04T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>ml-caffe</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wlins.me/2017/07/03/decisiontree/</loc>
-    <lastmod>2017-07-04T09:37:25.395Z</lastmod>
+    <lastmod>2017-07-06T03:43:19.721Z</lastmod>
     <data>
         <display>
         <title>Machine-Learning-DecisionTree</title>
@@ -71,29 +113,6 @@
         <tag>随笔</tag>
          
         <tag>hexo</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wlins.me/2017/03/13/blog/</loc>
-    <lastmod>2017-03-13T11:02:03.735Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo-Github-Blog</title>
-        <pubTime>2017-03-12T16:00:00.000Z</pubTime>
-        
-        <tag>随笔</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
-        <tag>linux</tag>
          
          
            

@@ -43,6 +43,69 @@
   </entry>
   
   <entry>
+    <title>Machine-Learning-Caffe</title>
+    <link href="http://wlins.me/2017/07/05/caffe-learn/"/>
+    <id>http://wlins.me/2017/07/05/caffe-learn/</id>
+    <published>2017-07-04T16:00:00.000Z</published>
+    <updated>2017-07-06T03:47:04.930Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/img/images4.jpeg" alt="Alt_text" title="Optional title"></p>
+<p>Caffe是一个深度学习的框架，主要用于神经网络深度学习</p>
+<a id="more"></a>
+<h4 id="Caffe模型"><a href="#Caffe模型" class="headerlink" title="Caffe模型"></a>Caffe模型</h4><ul>
+<li><p>Layers</p>
+<p>  Layer是Caffe模型和计算的基本单元，一系列layer和其他连接的集合组成了Net<br>  每一个Layer都定义了三种运算</p>
+<ul>
+<li>setup 在模型初始化时重置layer及其相互的连接</li>
+<li>forword 从Bottom层中接收Blob数据，进行计算后输出送入到top层中</li>
+<li>backword 给定相对于top层输出的梯度，计算其相对于输入的梯度，并传递到Bottom层</li>
+</ul>
+</li>
+<li><p>Blobs</p>
+<p>  Caffe使用Blobs结构來存储,交换,处理网络中的数据和导数信息，Blob是标准的数组结构</p>
+</li>
+<li><p>Nets</p>
+<p>  Caffe基于自己的模型，通过逐层定义Layer的方式定义整个网络，网络从数据输入层到损失层自下向上的定义整个模型</p>
+<ul>
+<li><strong>Net::Init() </strong> 进行模型的初始化，创建<strong>Blobs</strong>和<strong>Layers</strong>，搭建整个无向图，调用layer的<strong>Setup</strong>函数</li>
+</ul>
+</li>
+</ul>
+<h4 id="前传与后传"><a href="#前传与后传" class="headerlink" title="前传与后传"></a>前传与后传</h4><ul>
+<li><p>前传</p>
+<p>  Caffe组合每一层的计算以得到整个模型的计算函数</p>
+<ul>
+<li><strong>Layer::Forward()</strong> 实现每一层的前传</li>
+<li><strong>Net::Forward()</strong> 实现网络的前传</li>
+</ul>
+</li>
+<li><p>后传</p>
+<p>  Caffe反向组合每一层的梯度來计算整个网络的梯度</p>
+<ul>
+<li><strong>Layer::Backward()</strong> 实现每一层的后传</li>
+<li><strong>Net::Backward()</strong> 实现网络的后传</li>
+</ul>
+</li>
+</ul>
+<h4 id="Loss"><a href="#Loss" class="headerlink" title="Loss"></a>Loss</h4><p>学习的目的是找到一个网络权重的集合，使得损失函数最小<br>损失通过网络的前向计算得到，某些层的输出可以作为损失函数</p>
+<h4 id="Solver"><a href="#Solver" class="headerlink" title="Solver"></a>Solver</h4><p>Solver通过协调Net的前向推断计算和反向梯度计算来对参数进行更新,从而达到减小loss的目的</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/img/images4.jpeg&quot; alt=&quot;Alt_text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Caffe是一个深度学习的框架，主要用于神经网络深度学习&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="ml-caffe" scheme="http://wlins.me/tags/ml-caffe/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Machine-Learning-KNN</title>
     <link href="http://wlins.me/2017/07/04/knn/"/>
     <id>http://wlins.me/2017/07/04/knn/</id>
@@ -81,7 +144,7 @@
     <link href="http://wlins.me/2017/07/03/decisiontree/"/>
     <id>http://wlins.me/2017/07/03/decisiontree/</id>
     <published>2017-07-02T16:00:00.000Z</published>
-    <updated>2017-07-04T09:37:25.395Z</updated>
+    <updated>2017-07-06T03:43:19.721Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/images2.jpeg" alt="Alt_text" title="Optional title"></p>
 <h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><p>决策树算法属于监督学习，决策树是一个类似一流程图的树型结构，每个内部结点表示在一个属性上的测试，每个分支代表一个属性输出，每个树叶结点代表类或者类分布，树的最顶层是根结点。</p>
@@ -231,7 +294,7 @@
     <link href="http://wlins.me/2017/03/13/blog/"/>
     <id>http://wlins.me/2017/03/13/blog/</id>
     <published>2017-03-12T16:00:00.000Z</published>
-    <updated>2017-03-13T11:02:03.735Z</updated>
+    <updated>2017-07-06T03:47:06.010Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/blog.jpeg" alt="Alt_text" title="Optional title"></p>
 <p>本次博客是借助<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> + <a href="https://github.com" target="_blank" rel="external">Github</a>搭建，需要用到Nodejs和npm，主机系统是Ubuntu 16.04 LTS。</p>

@@ -43,14 +43,13 @@
   </entry>
   
   <entry>
-    <title>Alien War</title>
+    <title>ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document</title>
     <link href="http://wlins.me/2018/01/06/me.wlins.util.md/"/>
     <id>http://wlins.me/2018/01/06/me.wlins.util.md/</id>
     <published>2018-01-05T16:00:00.000Z</published>
-    <updated>2018-01-07T13:55:35.893Z</updated>
+    <updated>2018-01-07T13:59:34.561Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="ME-WLINS-UTIL-nbsp-nbsp-java-package-document"><a href="#ME-WLINS-UTIL-nbsp-nbsp-java-package-document" class="headerlink" title="ME.WLINS.UTIL &nbsp; &nbsp; java package document"></a>ME.WLINS.UTIL &nbsp; &nbsp; java package document</h2><hr>
-<p>A personal code repository for java, concret introduction as follows:</p>
+    <content type="html"><![CDATA[<p>A personal code repository for java, concret introduction as follows:</p>
 <h3 id="Print"><a href="#Print" class="headerlink" title="Print"></a>Print</h3><ul>
 <li>print(); 输出换行</li>
 <li>print(obj); 输出然后换行</li>
@@ -127,8 +126,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;ME-WLINS-UTIL-nbsp-nbsp-java-package-document&quot;&gt;&lt;a href=&quot;#ME-WLINS-UTIL-nbsp-nbsp-java-package-document&quot; class=&quot;headerlink&quot; title=&quot;ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document&quot;&gt;&lt;/a&gt;ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;A personal code repository for java, concret introduction as follows:&lt;/p&gt;
+      &lt;p&gt;A personal code repository for java, concret introduction as follows:&lt;/p&gt;
 &lt;h3 id=&quot;Print&quot;&gt;&lt;a href=&quot;#Print&quot; class=&quot;headerlink&quot; title=&quot;Print&quot;&gt;&lt;/a&gt;Print&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;print(); 输出换行&lt;/li&gt;
 &lt;li&gt;print(obj); 输出然后换行&lt;/li&gt;
@@ -144,7 +142,7 @@
     
       <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="java - introduction" scheme="http://wlins.me/tags/java-introduction/"/>
+      <category term="java - doc - introduction" scheme="http://wlins.me/tags/java-doc-introduction/"/>
     
   </entry>
   

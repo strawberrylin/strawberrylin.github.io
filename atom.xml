@@ -44,10 +44,116 @@
   
   <entry>
     <title>Alien War</title>
+    <link href="http://wlins.me/2018/01/06/me.wlins.util.md/"/>
+    <id>http://wlins.me/2018/01/06/me.wlins.util.md/</id>
+    <published>2018-01-05T16:00:00.000Z</published>
+    <updated>2018-01-07T13:55:35.893Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="ME-WLINS-UTIL-nbsp-nbsp-java-package-document"><a href="#ME-WLINS-UTIL-nbsp-nbsp-java-package-document" class="headerlink" title="ME.WLINS.UTIL &nbsp; &nbsp; java package document"></a>ME.WLINS.UTIL &nbsp; &nbsp; java package document</h2><hr>
+<p>A personal code repository for java, concret introduction as follows:</p>
+<h3 id="Print"><a href="#Print" class="headerlink" title="Print"></a>Print</h3><ul>
+<li>print(); 输出换行</li>
+<li>print(obj); 输出然后换行</li>
+<li>printnb(obj);输出然后不换行</li>
+<li>printf(format,args);Ｃ语言的printf函数<blockquote>
+<p>usage : import static me.wlins.util.Print.*;</p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+<hr>
+<h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><ul>
+<li>range(n); 产生０～n-1 的数组序列</li>
+<li>range(start,end);产生start~-end-1的数组序列</li>
+<li>range(start,end,step);产生start~end-1,间隔为step的数组序列<blockquote>
+<p>usage : import static me.wlins.util.Range.*;</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="MyStack"><a href="#MyStack" class="headerlink" title="MyStack"></a>MyStack</h3><ul>
+<li>push(); 进栈</li>
+<li>pop(); 出栈</li>
+<li>peek(); 取栈首元素</li>
+<li>empty();判断是否为空栈<blockquote>
+<p>usage: Stack<t> stack = new Stack<t>(); //T为初始化类型参数</t></t></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Hex"><a href="#Hex" class="headerlink" title="Hex"></a>Hex</h3><p>将二进制文件转化为十六进制输出</p>
+<ul>
+<li>format(byte[] data)　静态方法，返回一个十六进制字符串<blockquote>
+<p>usage:\<br> import me.wlins.util.Hex;\<br>Hex.format(data);</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Tuple"><a href="#Tuple" class="headerlink" title="Tuple"></a>Tuple</h3><p>创建元组，包括二维，三维，四维，五维元组<br>类：TwoTuple, ThreeTuple, FourTuple, FiveTuple</p>
+<blockquote>
+<p>usage: 返回多个对象，存在一个元组　\<br>return new FourTuple<class1, class2,="" class3,="" class4="">(new class1(), new class2(), new class3(), new class4());</class1,></p>
+</blockquote>
+<h3 id="PPrint"><a href="#PPrint" class="headerlink" title="PPrint"></a>PPrint</h3><p>一个灵巧的打印机，一个可以添加新行并且缩排所有元素的工具</p>
+<ul>
+<li>String pformat(Collection&lt;?&gt; c); 格式化</li>
+<li>void pprint(Collection&lt;?&gt; c); 打印</li>
+<li>void pprint(Object[] c); 打印<blockquote>
+<p>usage:\<br>得到一个重排的字符串：PPrint.pformat(list);<br>打印：PPrint.pprint(list);</p>
+<h3 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h3><p>产生由本地文件构成的对象数组，或者产生由给定目录下的有整个目录树中所有文件构成的List\<file></file></p>
+</blockquote>
+</li>
+<li>File[] local(path, regex); </li>
+<li>walk();参数文件起始路径和正则表达式<blockquote>
+<p>usage:\<br>Example: System.out.println(PPrint.walk(“.”);</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="BinaryFile"><a href="#BinaryFile" class="headerlink" title="BinaryFile"></a>BinaryFile</h3><p>打开二进制文件，并返回一个byte[]</p>
+<ul>
+<li>read(File bfile); 打开二进制文件</li>
+<li>read(String bfile); 打开二进制文件<blockquote>
+<p>usage:\<br>BinaryFile.read(“filename”);\<br>BinaryFile.read(new File(filePath);</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="TextFile"><a href="#TextFile" class="headerlink" title="TextFile"></a>TextFile</h3><p>读写文件，对文件进行分割</p>
+<ul>
+<li>read(filename); 读取文件保存到字符串</li>
+<li>write(aimfile,source); 将源写入目的文件</li>
+<li>构造器TextFile(filename, regex);Textfile(filename);有规则就按照规则分割，没有规则默认换行符<blockquote>
+<p>usage;\<br>TextFile.read(“test.java”)’\<br>TextFile.write(“test1.java”, file);\<br>TreeSet\<string\> words = new TextFile(filename, “\W+);</string\></p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;ME-WLINS-UTIL-nbsp-nbsp-java-package-document&quot;&gt;&lt;a href=&quot;#ME-WLINS-UTIL-nbsp-nbsp-java-package-document&quot; class=&quot;headerlink&quot; title=&quot;ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document&quot;&gt;&lt;/a&gt;ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;A personal code repository for java, concret introduction as follows:&lt;/p&gt;
+&lt;h3 id=&quot;Print&quot;&gt;&lt;a href=&quot;#Print&quot; class=&quot;headerlink&quot; title=&quot;Print&quot;&gt;&lt;/a&gt;Print&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;print(); 输出换行&lt;/li&gt;
+&lt;li&gt;print(obj); 输出然后换行&lt;/li&gt;
+&lt;li&gt;printnb(obj);输出然后不换行&lt;/li&gt;
+&lt;li&gt;printf(format,args);Ｃ语言的printf函数&lt;blockquote&gt;
+&lt;p&gt;usage : import static me.wlins.util.Print.*;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="java - introduction" scheme="http://wlins.me/tags/java-introduction/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alien War</title>
     <link href="http://wlins.me/2017/12/30/alien_war/"/>
     <id>http://wlins.me/2017/12/30/alien_war/</id>
     <published>2017-12-29T16:00:00.000Z</published>
-    <updated>2017-12-30T03:54:47.828Z</updated>
+    <updated>2018-01-07T13:55:37.397Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Project-Aim-Introduction"><a href="#Project-Aim-Introduction" class="headerlink" title="Project Aim Introduction"></a>Project Aim Introduction</h2><p>I want to lenarn the Python by myself. After I read the &lt;&lt; Python Crash course A hands-on ,Project-based Introduction to Programming &gt;&gt;, I want to strengthen my skill by the project.<br><a href="https://github.com/strawberrylin/AlienWar" target="_blank" rel="external">Click here to visit my Github repository</a></p>
 <a id="more"></a>

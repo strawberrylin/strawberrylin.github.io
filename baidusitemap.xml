@@ -4,16 +4,14 @@
 
     
   <url>
-    <loc>http://wlins.me/2018/01/06/me.wlins.util.md/</loc>
-    <lastmod>2018-01-07T14:08:16.621Z</lastmod>
+    <loc>http://wlins.me/2018/01/27/monkey_test/</loc>
+    <lastmod>2018-01-27T10:39:39.598Z</lastmod>
     <data>
         <display>
-        <title>ME.WLINS.UTIL &nbsp; &nbsp; java package document</title>
-        <pubTime>2018-01-05T16:00:00.000Z</pubTime>
+        <title>AndroidTestTool-BasedOnMonkeyTest</title>
+        <pubTime>2018-01-26T16:00:00.000Z</pubTime>
         
-        <tag>随笔</tag>
-         
-        <tag>java - doc - introduction</tag>
+        <tag>linux - python - android - monkeytest</tag>
          
          
            
@@ -24,7 +22,7 @@
     
   <url>
     <loc>http://wlins.me/2017/12/30/alien_war/</loc>
-    <lastmod>2018-01-07T13:55:37.397Z</lastmod>
+    <lastmod>2018-01-07T14:09:37.349Z</lastmod>
     <data>
         <display>
         <title>Alien War</title>
@@ -33,6 +31,25 @@
         <tag>随笔</tag>
          
         <tag>python - game</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wlins.me/2018/01/06/me.wlins.util.md/</loc>
+    <lastmod>2018-01-07T14:09:36.013Z</lastmod>
+    <data>
+        <display>
+        <title>ME.WLINS.UTIL &nbsp; &nbsp; java package document</title>
+        <pubTime>2018-01-05T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>java - doc - introduction</tag>
          
          
            

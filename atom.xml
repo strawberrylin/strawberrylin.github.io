@@ -43,11 +43,45 @@
   </entry>
   
   <entry>
+    <title>AndroidTestTool-BasedOnMonkeyTest</title>
+    <link href="http://wlins.me/2018/01/27/monkey_test/"/>
+    <id>http://wlins.me/2018/01/27/monkey_test/</id>
+    <published>2018-01-26T16:00:00.000Z</published>
+    <updated>2018-01-27T10:39:39.598Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个小工具,python</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>一个基于monkeytest工具的自动化android测试工具，根据得到的日志文件进行分析，对crash截图保存，并且将crash以表格保存，包括crash类型，时间以及Seed值．</p>
+<a id="more"></a>
+<h3 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h3><ul>
+<li>linux</li>
+<li>python3</li>
+<li>adb</li>
+<li>sdk</li>
+</ul>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>修改mongkey.ini文件，修改其中的包名为待测试的包名，同时可以修改activity值如果修改，在MonkeyConfig.py文件中修改<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># app["activity"] = config['DEFAULT']['activity']</span></div></pre></td></tr></table></figure></p>
+<p> 去掉注释用的’#’．<br> 打开模拟器或者链接USB设备，运行main.py开始测试<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># python3 main.py</span></div></pre></td></tr></table></figure></p>
+<p>等待测试结束后，在./log　文件夹下会生成monkey.log和traces.log以及截图文件monkey_log.png，在./目录下生成表格report.xlsx</p>
+<h3 id="测试截图"><a href="#测试截图" class="headerlink" title="测试截图"></a>测试截图</h3><p> <img src="/assets/img/monkey_test1.png" alt="monk_test1"><br> <img src="/assets/img/monkey_test2.png" alt="monkey_test2"><br><a href="https://github.com/strawberrylin/MonkeyTest" target="_blank" rel="external">项目地址: https://github.com/strawberrylin/MonkeyTest</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个小工具,python&lt;/p&gt;
+&lt;h3 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h3&gt;&lt;p&gt;一个基于monkeytest工具的自动化android测试工具，根据得到的日志文件进行分析，对crash截图保存，并且将crash以表格保存，包括crash类型，时间以及Seed值．&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="linux - python - android - monkeytest" scheme="http://wlins.me/tags/linux-python-android-monkeytest/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ME.WLINS.UTIL &amp;nbsp; &amp;nbsp; java package document</title>
     <link href="http://wlins.me/2018/01/06/me.wlins.util.md/"/>
     <id>http://wlins.me/2018/01/06/me.wlins.util.md/</id>
     <published>2018-01-05T16:00:00.000Z</published>
-    <updated>2018-01-07T14:08:16.621Z</updated>
+    <updated>2018-01-07T14:09:36.013Z</updated>
     
     <content type="html"><![CDATA[<p>A personal code repository for java, concret introduction as follows:</p>
 <h3 id="Print"><a href="#Print" class="headerlink" title="Print"></a>Print</h3><ul>
@@ -149,7 +183,7 @@
     <link href="http://wlins.me/2017/12/30/alien_war/"/>
     <id>http://wlins.me/2017/12/30/alien_war/</id>
     <published>2017-12-29T16:00:00.000Z</published>
-    <updated>2018-01-07T13:55:37.397Z</updated>
+    <updated>2018-01-07T14:09:37.349Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Project-Aim-Introduction"><a href="#Project-Aim-Introduction" class="headerlink" title="Project Aim Introduction"></a>Project Aim Introduction</h2><p>I want to lenarn the Python by myself. After I read the &lt;&lt; Python Crash course A hands-on ,Project-based Introduction to Programming &gt;&gt;, I want to strengthen my skill by the project.<br><a href="https://github.com/strawberrylin/AlienWar" target="_blank" rel="external">Click here to visit my Github repository</a></p>
 <a id="more"></a>

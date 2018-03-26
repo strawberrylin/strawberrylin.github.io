@@ -6,23 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wlins.me">
-  <title>Machine-Learning-KNN | Strawberrylin&#39;s Home</title>
+  <title>Strawberrylin&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
-为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Machine-Learning-KNN">
-<meta property="og:url" content="http://wlins.me/2017/07/04/knn/index.html">
+  <meta name="description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Strawberrylin's Home">
+<meta property="og:url" content="http://wlins.me/page/2/index.html">
 <meta property="og:site_name" content="Strawberrylin's Home">
-<meta property="og:description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
-为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
-<meta property="og:image" content="http://wlins.me/assets/img/images3.jpeg">
-<meta property="og:updated_time" content="2017-07-04T09:37:24.331Z">
+<meta property="og:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Machine-Learning-KNN">
-<meta name="twitter:description" content="KNN算法KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类
-为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类">
-<meta name="twitter:image" content="http://wlins.me/assets/img/images3.jpeg">
+<meta name="twitter:title" content="Strawberrylin's Home">
+<meta name="twitter:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
   
     <link rel="alternative" href="/atom.xml" title="Strawberrylin&#39;s Home" type="application/atom+xml">
   
@@ -154,70 +148,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-knn" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Machine-Learning-KNN
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/13/blog/">Hexo-Github-Blog</a>
     </h1>
   
 
         
-        <a href="/2017/07/04/knn/" class="archive-article-date">
-  	<time datetime="2017-07-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-04</time>
+        <a href="/2017/03/13/blog/" class="archive-article-date">
+  	<time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/assets/img/images3.jpeg" alt="Alt_text" title="Optional title"></p>
-<h4 id="KNN算法"><a href="#KNN算法" class="headerlink" title="KNN算法"></a>KNN算法</h4><p>KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类</p>
-<p>为了判断未知实例的类别，通过与他最近的已知实例的类别來对这个未知实例进行分类</p>
-<a id="more"></a>
-<blockquote>
-<p>  选择一个参数K，K是选择已知实例的数目，使预测具有最高的精确度<br>  计算未知实例和所有已知实例的距离<br>  选择最近K个已知实例<br>  选取最邻样本中最多数的类别作为这个实例的类别</p>
-</blockquote>
-<h4 id="KNN算法应用"><a href="#KNN算法应用" class="headerlink" title="KNN算法应用"></a>KNN算法应用</h4><p>在python库中有iris的数据集，可以直接加载，并且使用<br>数据集分为两部分，第一部分是每一个实例的特征值，有4项，第二部分是实例的标记</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> neighbors</div><div class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</div><div class="line"></div><div class="line">knn = neighbors.KNeighborsClassifier()</div><div class="line"></div><div class="line">iris = datasets.load_iris()</div><div class="line"><span class="keyword">print</span> iris</div><div class="line"></div><div class="line">knn.fit(iris.data, iris.target)</div><div class="line"></div><div class="line">predictedLabel = knn.predict([[<span class="number">0.1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>, <span class="number">0.4</span>]])</div><div class="line"></div><div class="line"><span class="keyword">print</span> (<span class="string">"predictedLabel is :"</span> + predictedLabel)</div><div class="line"><span class="keyword">print</span> predictedLabel</div></pre></td></tr></table></figure>
-<p>对于未知实例[0.1,0.2,0.3,0.4]，预测的结果为属于[0]</p>
-
+        <p><img src="/assets/img/blog.jpeg" alt="Alt_text" title="Optional title"></p>
+<p>本次博客是借助<a href="https://hexo.io/">Hexo</a> + <a href="https://github.com">Github</a>搭建，需要用到Nodejs和npm，主机系统是Ubuntu 16.04 LTS。</p>
+<h3 id="preparation"><a href="#preparation" class="headerlink" title="preparation"></a>preparation</h3><h4 id="Nodejs-amp-npm"><a href="#Nodejs-amp-npm" class="headerlink" title="Nodejs &amp; npm"></a>Nodejs &amp; npm</h4><p> 安装Nodejs &amp; npm，用于生成静态页面和安装插件，Nodejs必须是6.x版本</p>
+<h4 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h4><p>首先安装git工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install git</div></pre></td></tr></table></figure></p>
+<p>部署时需要通过git工具将本地文件提交到远程github仓库</p>
+<p>然后到<a href="https://github.com">Github</a>官网注册github帐号，在github官网创建仓库，仓库名必须为”your_id”.github.io,(将引号内容替换为你的github名）</p>
+<h4 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h4><p>在本地创建一个文件夹，进入本文件夹，安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g Hexo</div></pre></td></tr></table></figure></p>
+<hr>
+        
+          <a class="article-more-a" href="/2017/03/13/blog/#more">more >></a>
+        
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖糖<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/wechatpay.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -232,7 +197,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ml - knn</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
@@ -241,83 +214,18 @@
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/13/blog/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://wlins.me/2017/07/04/knn/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-  
-<nav id="article-nav">
-  
-    <a href="/2017/07/05/caffe-learn/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Machine-Learning-Caffe
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/07/03/decisiontree/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Machine-Learning-DecisionTree</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
+
 
 
 
@@ -325,28 +233,11 @@
 
 
   
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="knn" data-title="Machine-Learning-KNN" data-url="http://wlins.me/2017/07/04/knn/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"strawberrylin"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
   
-
-
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -368,8 +259,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>http://wlins.me/2018/03/29/Vue.js/</loc>
+    <lastmod>2018-03-29T08:00:04.170Z</lastmod>
+    <data>
+        <display>
+        <title>Vuejs</title>
+        <pubTime>2018-03-28T16:00:00.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>Vue</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wlins.me/2018/03/26/SpringBoot/</loc>
-    <lastmod>2018-03-26T13:51:52.637Z</lastmod>
+    <lastmod>2018-03-26T13:51:52.638Z</lastmod>
     <data>
         <display>
         <title>Spring-Boot</title>
@@ -66,7 +85,7 @@
     
   <url>
     <loc>http://wlins.me/2017/12/30/alien_war/</loc>
-    <lastmod>2018-01-07T14:09:37.349Z</lastmod>
+    <lastmod>2018-01-07T14:09:37.350Z</lastmod>
     <data>
         <display>
         <title>Alien War</title>
@@ -85,7 +104,7 @@
     
   <url>
     <loc>http://wlins.me/2018/01/06/me.wlins.util.md/</loc>
-    <lastmod>2018-01-07T14:09:36.013Z</lastmod>
+    <lastmod>2018-01-07T14:09:36.014Z</lastmod>
     <data>
         <display>
         <title>ME.WLINS.UTIL &nbsp; &nbsp; java package document</title>
@@ -104,7 +123,7 @@
     
   <url>
     <loc>http://wlins.me/2017/07/05/caffe-learn/</loc>
-    <lastmod>2017-12-30T03:54:48.992Z</lastmod>
+    <lastmod>2017-12-30T03:54:48.993Z</lastmod>
     <data>
         <display>
         <title>Machine-Learning-Caffe</title>
@@ -165,7 +184,7 @@
     
   <url>
     <loc>http://wlins.me/2017/07/03/decisiontree/</loc>
-    <lastmod>2017-07-06T03:43:19.721Z</lastmod>
+    <lastmod>2017-07-06T03:43:19.722Z</lastmod>
     <data>
         <display>
         <title>Machine-Learning-DecisionTree</title>
@@ -184,7 +203,7 @@
     
   <url>
     <loc>http://wlins.me/2017/07/04/knn/</loc>
-    <lastmod>2017-07-04T09:37:24.331Z</lastmod>
+    <lastmod>2017-07-04T09:37:24.332Z</lastmod>
     <data>
         <display>
         <title>Machine-Learning-KNN</title>

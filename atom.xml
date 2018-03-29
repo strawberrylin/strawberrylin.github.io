@@ -43,11 +43,90 @@
   </entry>
   
   <entry>
+    <title>Vuejs</title>
+    <link href="http://wlins.me/2018/03/29/Vue.js/"/>
+    <id>http://wlins.me/2018/03/29/Vue.js/</id>
+    <published>2018-03-28T16:00:00.000Z</published>
+    <updated>2018-03-29T08:00:04.170Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Vue-js-简介"><a href="#Vue-js-简介" class="headerlink" title="Vue.js 简介"></a>Vue.js 简介</h3><p>一款轻量级的前端框架<br>双向绑定:在页面的输入会绑定到js代码里的变量，js变量的变动会在调用这个变量的页面展现．</p>
+<ul>
+<li>&lt; template > HTML</li>
+<li>&lt; script > JS</li>
+<li>&lt; style > CSS</li>
+</ul>
+<a id="more"></a>
+<h3 id="Vue开发环境"><a href="#Vue开发环境" class="headerlink" title="Vue开发环境"></a>Vue开发环境</h3><ul>
+<li>npm包管理器</li>
+<li>node<h4 id="快速搭建应用"><a href="#快速搭建应用" class="headerlink" title="快速搭建应用"></a>快速搭建应用</h4></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#全局安装vue-cli</span></div><div class="line">npm install -g vue-cli</div><div class="line"><span class="comment">#创建一个基于webpack模板的新项目</span></div><div class="line">vue init webpack my-project</div><div class="line"><span class="comment">#安装依赖</span></div><div class="line"><span class="built_in">cd</span> my-project</div><div class="line">npm install</div><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<h3 id="Vue组件"><a href="#Vue组件" class="headerlink" title="Vue组件"></a>Vue组件</h3><ul>
+<li>Vue对象<ul>
+<li>data: 数据</li>
+<li>methods:方法</li>
+<li>watch: 监听器</li>
+</ul>
+</li>
+<li><p>html指令</p>
+<ul>
+<li>v-text:渲染数据</li>
+<li>v-if:开关，是否显示</li>
+<li>v-on:绑定事件</li>
+<li>v-for:循环渲染<br>Vue里的对象的设置通过html指令进行关联</li>
+</ul>
+</li>
+<li><p>store功能</p>
+</li>
+</ul>
+<p>编写一个存储模块，将信息存储在浏览器的某个文件里面<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> STOREAGE_KEY = <span class="string">'todos-vuejs'</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">    fetch () &#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">JSON</span>.parse(windows.localStorage.getItem(</div><div class="line">            STOREAGE_KEY) || <span class="string">'[]'</span>)</div><div class="line">    &#125;,</div><div class="line">    save (items) &#123;</div><div class="line">        windows.localStorage.setItem(STOREAGE_KEY, <span class="built_in">JSON</span>.stringfy(items))</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<ul>
+<li>组件<ul>
+<li>功能模块 - select,     pagenation…</li>
+<li>页面区域 - header,footer,sidebar…</li>
+</ul>
+</li>
+</ul>
+<p>调用时通过import关键字导入，然后使用components注册后即可使用</p>
+<ul>
+<li>组件之间的通信 - props<br>使用props进行注册，比如在一个组件里props: [‘msg’]，则在另一个组件里可以直接使用，包括赋值等操作．<ul>
+<li>父向子组件传递信息<br>编写好子组件后，在父导入并注册，然后使用，子组件的名字会自动更改比如CompnentA在父亲中的标签应该书写为 &lt; compnent-a ><br>父组件将信息存放在一个变量中，卸载标签里，比如\&lt; compnent-a msg=”hello” ><br>子组件注册变量，然后接收消息props: [‘msg’]</li>
+<li>子向父组件传递消息(<br>Vue实例实现了一个自定义事件接口，用于在组件树中通信，这个事件系统独立于原生DOM事件<br>每个Vue实例都是一个事件触发器:<ul>
+<li>使用Son()监听事件;</li>
+<li>使用Semit() 在它上面触发事件;</li>
+<li>使用$dispatch()派发事件</li>
+<li>使用$broadcast()广播事件,事件向下传递给所有后代．<br>父亲在使用子组件时，使用v-on指令添加一个事件，比如\&lt; compnent-a msgfromfather=”hello” v-on:child-tell-me-something=’listenToMyBoy’ > 然后编写一个方法:listenToMyBoy(msg),msg就是子组件传递的消息；然后在子组件使用$emit()触发事件:this.emit(‘child-tell-me-somethig’，this.msg)，</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Vue-js-简介&quot;&gt;&lt;a href=&quot;#Vue-js-简介&quot; class=&quot;headerlink&quot; title=&quot;Vue.js 简介&quot;&gt;&lt;/a&gt;Vue.js 简介&lt;/h3&gt;&lt;p&gt;一款轻量级的前端框架&lt;br&gt;双向绑定:在页面的输入会绑定到js代码里的变量，js变量的变动会在调用这个变量的页面展现．&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt; template &gt; HTML&lt;/li&gt;
+&lt;li&gt;&amp;lt; script &gt; JS&lt;/li&gt;
+&lt;li&gt;&amp;lt; style &gt; CSS&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="Vue" scheme="http://wlins.me/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spring-Boot</title>
     <link href="http://wlins.me/2018/03/26/SpringBoot/"/>
     <id>http://wlins.me/2018/03/26/SpringBoot/</id>
     <published>2018-03-25T16:00:00.000Z</published>
-    <updated>2018-03-26T13:51:52.637Z</updated>
+    <updated>2018-03-26T13:51:52.638Z</updated>
     
     <content type="html"><![CDATA[<h3 id="SpringBoot简介"><a href="#SpringBoot简介" class="headerlink" title="SpringBoot简介"></a>SpringBoot简介</h3><p>SpringBoot是SpringMVC的升级版，有如下特点：</p>
 <ul>
@@ -281,7 +360,7 @@
     <link href="http://wlins.me/2018/01/06/me.wlins.util.md/"/>
     <id>http://wlins.me/2018/01/06/me.wlins.util.md/</id>
     <published>2018-01-05T16:00:00.000Z</published>
-    <updated>2018-01-07T14:09:36.013Z</updated>
+    <updated>2018-01-07T14:09:36.014Z</updated>
     
     <content type="html"><![CDATA[<p>A personal code repository for java, concret introduction as follows:</p>
 <h3 id="Print"><a href="#Print" class="headerlink" title="Print"></a>Print</h3><ul>
@@ -383,7 +462,7 @@
     <link href="http://wlins.me/2017/12/30/alien_war/"/>
     <id>http://wlins.me/2017/12/30/alien_war/</id>
     <published>2017-12-29T16:00:00.000Z</published>
-    <updated>2018-01-07T14:09:37.349Z</updated>
+    <updated>2018-01-07T14:09:37.350Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Project-Aim-Introduction"><a href="#Project-Aim-Introduction" class="headerlink" title="Project Aim Introduction"></a>Project Aim Introduction</h2><p>I want to lenarn the Python by myself. After I read the &lt;&lt; Python Crash course A hands-on ,Project-based Introduction to Programming &gt;&gt;, I want to strengthen my skill by the project.<br><a href="https://github.com/strawberrylin/AlienWar" target="_blank" rel="external">Click here to visit my Github repository</a></p>
 <a id="more"></a>
@@ -420,7 +499,7 @@
     <link href="http://wlins.me/2017/07/05/caffe-learn/"/>
     <id>http://wlins.me/2017/07/05/caffe-learn/</id>
     <published>2017-07-04T16:00:00.000Z</published>
-    <updated>2017-12-30T03:54:48.992Z</updated>
+    <updated>2017-12-30T03:54:48.993Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/images4.jpeg" alt="Alt_text" title="Optional title"></p>
 <p>Caffe是一个深度学习的框架，主要用于神经网络深度学习</p>
@@ -483,7 +562,7 @@
     <link href="http://wlins.me/2017/07/04/knn/"/>
     <id>http://wlins.me/2017/07/04/knn/</id>
     <published>2017-07-03T16:00:00.000Z</published>
-    <updated>2017-07-04T09:37:24.331Z</updated>
+    <updated>2017-07-04T09:37:24.332Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/images3.jpeg" alt="Alt_text" title="Optional title"></p>
 <h4 id="KNN算法"><a href="#KNN算法" class="headerlink" title="KNN算法"></a>KNN算法</h4><p>KNN算法用来解决分类问题，它是属于基于实例的学习，每一次学习都是根据实例，也属于懒惰学习，处理训练集时没有创建模型，后面根据实例的对比才来归类</p>
@@ -517,7 +596,7 @@
     <link href="http://wlins.me/2017/07/03/decisiontree/"/>
     <id>http://wlins.me/2017/07/03/decisiontree/</id>
     <published>2017-07-02T16:00:00.000Z</published>
-    <updated>2017-07-06T03:43:19.721Z</updated>
+    <updated>2017-07-06T03:43:19.722Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/images2.jpeg" alt="Alt_text" title="Optional title"></p>
 <h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><p>决策树算法属于监督学习，决策树是一个类似一流程图的树型结构，每个内部结点表示在一个属性上的测试，每个分支代表一个属性输出，每个树叶结点代表类或者类分布，树的最顶层是根结点。</p>

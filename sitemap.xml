@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wlins.me/2018/03/29/Vue.js/</loc>
+    
+    <lastmod>2018-03-29T08:00:04.170Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wlins.me/2018/03/26/SpringBoot/</loc>
     
-    <lastmod>2018-03-26T13:51:52.637Z</lastmod>
+    <lastmod>2018-03-26T13:51:52.638Z</lastmod>
     
   </url>
   
@@ -25,21 +32,21 @@
   <url>
     <loc>http://wlins.me/2017/12/30/alien_war/</loc>
     
-    <lastmod>2018-01-07T14:09:37.349Z</lastmod>
+    <lastmod>2018-01-07T14:09:37.350Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wlins.me/2018/01/06/me.wlins.util.md/</loc>
     
-    <lastmod>2018-01-07T14:09:36.013Z</lastmod>
+    <lastmod>2018-01-07T14:09:36.014Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wlins.me/2017/07/05/caffe-learn/</loc>
     
-    <lastmod>2017-12-30T03:54:48.992Z</lastmod>
+    <lastmod>2017-12-30T03:54:48.993Z</lastmod>
     
   </url>
   
@@ -60,14 +67,14 @@
   <url>
     <loc>http://wlins.me/2017/07/03/decisiontree/</loc>
     
-    <lastmod>2017-07-06T03:43:19.721Z</lastmod>
+    <lastmod>2017-07-06T03:43:19.722Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://wlins.me/2017/07/04/knn/</loc>
     
-    <lastmod>2017-07-04T09:37:24.331Z</lastmod>
+    <lastmod>2017-07-04T09:37:24.332Z</lastmod>
     
   </url>
   

@@ -43,6 +43,42 @@
   </entry>
   
   <entry>
+    <title>How to write a beautiful README file</title>
+    <link href="http://wlins.me/2018/09/25/ReadMe/"/>
+    <id>http://wlins.me/2018/09/25/ReadMe/</id>
+    <published>2018-09-24T16:00:00.000Z</published>
+    <updated>2018-09-25T15:08:35.965Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="How-to-write-a-beautiful-ReadMe-file"><a href="#How-to-write-a-beautiful-ReadMe-file" class="headerlink" title="How to write a beautiful ReadMe file"></a>How to write a beautiful ReadMe file</h1><p>A README is a documentation that is usually distributed with a piece of software that contains a description or precaution for the software.<br>A README shall be simple and easy.</p>
+<a id="more"></a>
+<h3 id="MarkDown-is-neceesary"><a href="#MarkDown-is-neceesary" class="headerlink" title="MarkDown is neceesary"></a>MarkDown is neceesary</h3><p>Write the ReadMe file with markdown.</p>
+<h3 id="The-Content"><a href="#The-Content" class="headerlink" title="The Content"></a>The Content</h3><ul>
+<li>The name of the project and all the module.</li>
+<li>Simple description of the use of the lib.</li>
+<li>How to built and install.</li>
+<li>Author</li>
+<li>Licenses</li>
+</ul>
+<h3 id="Beautify-your-README"><a href="#Beautify-your-README" class="headerlink" title="Beautify your README"></a>Beautify your README</h3><ul>
+<li>Make some beautiful icon<br>There is a website <a href="https://shields.io/#/examples/other" target="_blank" rel="external">shields.io</a>, where you can make some beautiful icons for custom made.<br>Just like flows:<br><a href="https://strawberrylin.github.io/" target="_blank" rel="external"><img src="https://img.shields.io/badge/author-strawberrylin-blue.svg" alt="Author"></a></li>
+</ul>
+<p>[![Author](<a href="https://img.shields.io/badge/author-strawberrylin-blue.svg)](https://strawberrylin.github.io/" target="_blank" rel="external">https://img.shields.io/badge/author-strawberrylin-blue.svg)](https://strawberrylin.github.io/</a>)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;How-to-write-a-beautiful-ReadMe-file&quot;&gt;&lt;a href=&quot;#How-to-write-a-beautiful-ReadMe-file&quot; class=&quot;headerlink&quot; title=&quot;How to write a beautiful ReadMe file&quot;&gt;&lt;/a&gt;How to write a beautiful ReadMe file&lt;/h1&gt;&lt;p&gt;A README is a documentation that is usually distributed with a piece of software that contains a description or precaution for the software.&lt;br&gt;A README shall be simple and easy.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="README" scheme="http://wlins.me/tags/README/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vuejs</title>
     <link href="http://wlins.me/2018/03/29/Vue.js/"/>
     <id>http://wlins.me/2018/03/29/Vue.js/</id>

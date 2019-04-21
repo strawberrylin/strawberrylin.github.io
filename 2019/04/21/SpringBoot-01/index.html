@@ -6,17 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://wlins.me">
-  <title>Tag: 随笔 | Strawberrylin&#39;s Home</title>
+  <title>SpringBoot入门系列文章(一) 初相见 | Strawberrylin&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Strawberrylin's Home">
-<meta property="og:url" content="http://wlins.me/tags/随笔/page/2/index.html">
+  <meta name="description" content="SpringBoot官方参考文档: https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/
+一、相遇SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。SpringBoot最大的特性在于配置:
+
+配置简单，只需要在配置文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot入门系列文章(一) 初相见">
+<meta property="og:url" content="http://wlins.me/2019/04/21/SpringBoot-01/index.html">
 <meta property="og:site_name" content="Strawberrylin's Home">
-<meta property="og:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
+<meta property="og:description" content="SpringBoot官方参考文档: https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/
+一、相遇SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。SpringBoot最大的特性在于配置:
+
+配置简单，只需要在配置文">
+<meta property="og:image" content="http://wlins.me/assets/img/springboot1_1.png">
+<meta property="og:image" content="http://wlins.me/assets/img/springboot1_2.png">
+<meta property="og:updated_time" content="2019-04-21T09:08:23.354Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Strawberrylin's Home">
-<meta name="twitter:description" content="华中科技大学14级，计算机科学与技术学院，计算机科学与技术专业,本科">
+<meta name="twitter:title" content="SpringBoot入门系列文章(一) 初相见">
+<meta name="twitter:description" content="SpringBoot官方参考文档: https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/
+一、相遇SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。SpringBoot最大的特性在于配置:
+
+配置简单，只需要在配置文">
+<meta name="twitter:image" content="http://wlins.me/assets/img/springboot1_1.png">
   
     <link rel="alternative" href="/atom.xml" title="Strawberrylin&#39;s Home" type="application/atom+xml">
   
@@ -148,36 +161,82 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-SpringBoot-01" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      SpringBoot入门系列文章(一) 初相见
+    </h1>
+  
+
+        
+        <a href="/2019/04/21/SpringBoot-01/" class="archive-article-date">
+  	<time datetime="2019-04-20T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-21</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/assets/img/springboot1_1.png" alt="SpringBoot"><br>SpringBoot官方参考文档: <a href="https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/" target="_blank" rel="external">https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/</a></p>
+<h3 id="一、相遇"><a href="#一、相遇" class="headerlink" title="一、相遇"></a>一、相遇</h3><p>SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。<br>SpringBoot最大的特性在于配置:</p>
+<ul>
+<li>配置简单，只需要在配置文件添加对应的配置，简单明了易懂</li>
+<li>很多组件都有默认配置，而且诶会自动配置</li>
+<li>自己添加配置页很简单，编写自己的配置类并注入容器就行</li>
+</ul>
+<a id="more"></a>
+<h3 id="二、相知"><a href="#二、相知" class="headerlink" title="二、相知"></a>二、相知</h3><p>能够快速搭建一个轻量级服务端应用，简化开发，方便部署，维护简单，所以无论是开发一个后台应用，还是微服务体系架构的搭建，使用SpringBoot都将非常方便。<br>和以前后台开发相比，之前初始化应用，首先需要配置很多组件，包括前端控制器、视图渲染器、配置Tomcat容器、配置数据库等，应用启动后需要配置日志、拦截器等，才能开始开发。简爱发完成后，部署到生产环境，启动应用，优势麻烦。SpringBoot提供内嵌的Tomcat容器，打包支持jar模式，使用命令Java -jar *.jar即可启动应用。通过Maven管理项目依赖，并引入其他组件，通过简单的配置即可启用其他组件，比如日志模块、系统监控模块等，以此快速搭建一个完备、高效、稳定的后台应用。</p>
+<h3 id="三、相识"><a href="#三、相识" class="headerlink" title="三、相识"></a>三、相识</h3><p>快速搭建基于SpringBoot的后台应用，有以下几种方式:</p>
+<ul>
+<li>在spring官网生成项目，地址:<a href="https://start.spring.io/#" target="_blank" rel="external">https://start.spring.io/#</a>，填写项目信息、选择项目构建方式、打包方式、Java版本、以及需要加载的组件模块(例如Web、MyBatis、MySQL等)，然后生成项目，下载到本地即可。</li>
+</ul>
+<p><img src="/assets/img/springboot1_2.png" alt="SpringBoot"></p>
+<ul>
+<li>基于IDE的构建，包括IDEA、Eclipse等，构建方式不做赘述。</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖糖<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechatpay.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/03/decisiontree/" class="archive-article-date">
-  	<time datetime="2017-07-02T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/03/decisiontree/">Machine-Learning-DecisionTree</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -187,121 +246,121 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ml - decisiontree</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://wlins.me/2019/04/21/SpringBoot-01/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/30/concept_day1/" class="archive-article-date">
-  	<time datetime="2017-06-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-30</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/30/concept_day1/">Machine-Learning-BaseConception</a>
-    </h1>
+    <a href="/2080/12/31/start/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/10/14/css/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS Learning-1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="SpringBoot-01" data-title="SpringBoot入门系列文章(一) 初相见" data-url="http://wlins.me/2019/04/21/SpringBoot-01/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"strawberrylin"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ml - conception</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/13/blog/" class="archive-article-date">
-  	<time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/13/blog/">Hexo-Github-Blog</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/tags/随笔/">&laquo; Prev</a><a class="page-number" href="/tags/随笔/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
 
           </div>
@@ -324,9 +383,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wlins.me/"/>
-  <updated>2017-12-30T03:48:34.060Z</updated>
+  <updated>2019-04-21T08:49:57.550Z</updated>
   <id>http://wlins.me/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://wlins.me/2080/12/31/start/"/>
     <id>http://wlins.me/2080/12/31/start/</id>
     <published>2080-12-30T16:00:00.000Z</published>
-    <updated>2017-12-30T03:48:34.060Z</updated>
+    <updated>2019-04-21T08:49:57.550Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/assets/img/boat_ocean.jpg" alt="Alt text" title="Optional title"></p>
 <p>Welcom to strawberylin’s home. This is my very first post. If you find any problems or trouble  you can find me on <a href="https://github.com/strawberrylin/strawberrylin.github.io/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h3 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h3><p>　 2014年，进入大学，开始有关计算机科学的学习，出于兴趣，2015年开始搭建个人博客。开始是借助github,后来了解到Hexo,但是每次都是玩一玩，没有花时间去管理和更新，导致之前的博客内容琐碎杂乱。<br>　 大学时光已近3/4，说到收获却无从说起，似乎什么收获都没有．于是决定培养一个写博客的习惯，将学到的一点一点收起来,同时将前面的blog重新整理和更新．</p>
+<h3 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h3><p>希望能够保持更新</p>
 <h3 id="Sum"><a href="#Sum" class="headerlink" title="Sum"></a>Sum</h3><p>水滴石穿</p>
 ]]></content>
     
@@ -39,6 +39,51 @@
       <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="hexo" scheme="http://wlins.me/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot入门系列文章(一) 初相见</title>
+    <link href="http://wlins.me/2019/04/21/SpringBoot-01/"/>
+    <id>http://wlins.me/2019/04/21/SpringBoot-01/</id>
+    <published>2019-04-20T16:00:00.000Z</published>
+    <updated>2019-04-21T09:08:23.354Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/assets/img/springboot1_1.png" alt="SpringBoot"><br>SpringBoot官方参考文档: <a href="https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/" target="_blank" rel="external">https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/</a></p>
+<h3 id="一、相遇"><a href="#一、相遇" class="headerlink" title="一、相遇"></a>一、相遇</h3><p>SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。<br>SpringBoot最大的特性在于配置:</p>
+<ul>
+<li>配置简单，只需要在配置文件添加对应的配置，简单明了易懂</li>
+<li>很多组件都有默认配置，而且诶会自动配置</li>
+<li>自己添加配置页很简单，编写自己的配置类并注入容器就行</li>
+</ul>
+<a id="more"></a>
+<h3 id="二、相知"><a href="#二、相知" class="headerlink" title="二、相知"></a>二、相知</h3><p>能够快速搭建一个轻量级服务端应用，简化开发，方便部署，维护简单，所以无论是开发一个后台应用，还是微服务体系架构的搭建，使用SpringBoot都将非常方便。<br>和以前后台开发相比，之前初始化应用，首先需要配置很多组件，包括前端控制器、视图渲染器、配置Tomcat容器、配置数据库等，应用启动后需要配置日志、拦截器等，才能开始开发。简爱发完成后，部署到生产环境，启动应用，优势麻烦。SpringBoot提供内嵌的Tomcat容器，打包支持jar模式，使用命令Java -jar *.jar即可启动应用。通过Maven管理项目依赖，并引入其他组件，通过简单的配置即可启用其他组件，比如日志模块、系统监控模块等，以此快速搭建一个完备、高效、稳定的后台应用。</p>
+<h3 id="三、相识"><a href="#三、相识" class="headerlink" title="三、相识"></a>三、相识</h3><p>快速搭建基于SpringBoot的后台应用，有以下几种方式:</p>
+<ul>
+<li>在spring官网生成项目，地址:<a href="https://start.spring.io/#" target="_blank" rel="external">https://start.spring.io/#</a>，填写项目信息、选择项目构建方式、打包方式、Java版本、以及需要加载的组件模块(例如Web、MyBatis、MySQL等)，然后生成项目，下载到本地即可。</li>
+</ul>
+<p><img src="/assets/img/springboot1_2.png" alt="SpringBoot"></p>
+<ul>
+<li>基于IDE的构建，包括IDEA、Eclipse等，构建方式不做赘述。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/assets/img/springboot1_1.png&quot; alt=&quot;SpringBoot&quot;&gt;&lt;br&gt;SpringBoot官方参考文档: &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/&quot;&gt;https://docs.spring.io/spring-boot/docs/2.1.4.RELEASE/reference/htmlsingle/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、相遇&quot;&gt;&lt;a href=&quot;#一、相遇&quot; class=&quot;headerlink&quot; title=&quot;一、相遇&quot;&gt;&lt;/a&gt;一、相遇&lt;/h3&gt;&lt;p&gt;SpringBoot是由Pivotal团队提供的一款后台框架，又来搭建后台服务，其主要作用在于简化开发，快速搭建高效、稳定的轻量级应用。&lt;br&gt;SpringBoot最大的特性在于配置:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置简单，只需要在配置文件添加对应的配置，简单明了易懂&lt;/li&gt;
+&lt;li&gt;很多组件都有默认配置，而且诶会自动配置&lt;/li&gt;
+&lt;li&gt;自己添加配置页很简单，编写自己的配置类并注入容器就行&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://wlins.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="springboot" scheme="http://wlins.me/tags/springboot/"/>
     
   </entry>
   
